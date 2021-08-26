@@ -55,6 +55,7 @@ Now we can use the `soup` variable to extract the necessary information from the
 *Step 5: Finding the appropriate tags on the website*
 
 Before we write any more code, we first need to find out the HTML tags on the website that store the required information. Go to the website, right-click and select “Inspect” from the menu, or you can simultaneously press Ctrl+Shift+I. 
+
 ![finding HTML tags](https://raw.githubusercontent.com/Anpr1211/Data-files/master/image/website_img_3.png)
 
 If you are working in Google Chrome, you will be able to see HTML code on the right-hand side, as displayed in the image above. You can inspect the website in any other browser as well. 
@@ -91,8 +92,10 @@ To get the exact text, use the text attribute in the following way.
 ![output of tags[0].text](https://raw.githubusercontent.com/Anpr1211/Data-files/master/image/website_img_6.png)
 
 Now you can simply iterate over the list elements and get the topic names. 
-```for i in range(len(tags)):
-    print(tags[i].text)```
+```
+for i in range(len(tags)):
+    print(tags[i].text)
+```
     
 ![all the trending topic names](https://raw.githubusercontent.com/Anpr1211/Data-files/master/image/website_img_7.png)
 
