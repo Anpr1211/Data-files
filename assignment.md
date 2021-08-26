@@ -68,7 +68,7 @@ As displayed in the image, the elements that we need are present in a div tag wi
 
 *Step 6: Getting the data from the `soup` variable*
 
-Now, we need to find all the div tags that have a class name *_1gUIC undefined*, as it stores the required information that we need. We use the find function, specify the tag that we want to look for (“div”), and the class name of the element. 
+Now, we need to find all the div tags that have a class name *_1gUIC undefined*, as it stores the required information that we need. We use the `find()` function, specify the tag that we want to look for (“div”), and the class name of the element. 
 
 `trending_news = soup.find('div', class_="_1gUIC undefined")`
 
@@ -88,6 +88,7 @@ The `tags` variable is a list of size 10. This is what the output of the first e
 `
 
 To get the exact text, use the text attribute in the following way.
+
 `tags[0].text`
 ![output of tags[0].text](https://raw.githubusercontent.com/Anpr1211/Data-files/master/image/website_img_6.png)
 
