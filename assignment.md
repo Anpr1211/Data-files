@@ -45,6 +45,7 @@ Your output should be in the format given below. The exact output might differ d
 This output response is in binary format and cannot be worked with directly. Hence, we will have to parse it using BeautifulSoup.
 
 *Step 4: Parsing the website response with BeautifulSoup*
+
 Pass the page content as a parameter to the BeautifulSoup function and specify the parser that you want to use. Here, we have used the `html.parser`. You can use any other parser as well which is suitable to the website that you want to scrape.
 
 `soup = BeautifulSoup(page.content, "html.parser")`
@@ -97,14 +98,13 @@ Now you can simply iterate over the list elements and get the topic names.
 
 The entire code has been given below:
 ```
-# importing libraries
 import requests
 from bs4 import BeautifulSoup
 
 url = "https://timesofindia.indiatimes.com/"
 
-page = requests.get(url)                    # sending the request to the website
-page.content                                     # displaying the HTML content of the website
+page = requests.get(url)                    
+page.content                                
 
 soup = BeautifulSoup(page.content, "html.parser")
 
